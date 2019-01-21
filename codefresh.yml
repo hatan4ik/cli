@@ -31,7 +31,8 @@ steps:
     title: "Pushing image tagged with revision to registry"
     type: push
     candidate: ${{build_step}}
-    tag: ${{CF_SHORT_REVISION}}
+#    tag: ${{CF_SHORT_REVISION}}
+    tag: test-no-pretty
     registry: "CFCR"
 
   execute_release_pipeline:
